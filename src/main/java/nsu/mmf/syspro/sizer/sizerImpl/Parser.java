@@ -1,7 +1,7 @@
-package nsu.mmf.syspro.jdu.jduImpl;
+package nsu.mmf.syspro.sizer.sizerImpl;
 
-import nsu.mmf.syspro.jdu.command.Command;
-import nsu.mmf.syspro.jdu.exception.ParserException;
+import nsu.mmf.syspro.sizer.command.Command;
+import nsu.mmf.syspro.sizer.exception.ParserException;
 
 import java.nio.file.Path;
 
@@ -9,7 +9,7 @@ public class Parser {
 
     public Command parse(String line) {
         String[] options = line.split(" ");
-        if (!options[0].equals("jdu")) {
+        if (!options[0].equals("sizer")) {
             throw new ParserException("Invalid input: " + options[0]);
         }
         int index = 1;

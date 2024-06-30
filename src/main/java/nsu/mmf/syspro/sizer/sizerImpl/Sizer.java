@@ -1,15 +1,15 @@
-package nsu.mmf.syspro.jdu.jduImpl;
+package nsu.mmf.syspro.sizer.sizerImpl;
 
-import nsu.mmf.syspro.jdu.command.Command;
-import nsu.mmf.syspro.jdu.exception.ParserException;
+import nsu.mmf.syspro.sizer.command.Command;
+import nsu.mmf.syspro.sizer.exception.ParserException;
 
 import java.io.IOException;
 
-public class JDU {
+public class Sizer {
 
     final Appendable outputStream;
 
-    public JDU(Appendable outputStream) {
+    public Sizer(Appendable outputStream) {
         this.outputStream = outputStream;
     }
 

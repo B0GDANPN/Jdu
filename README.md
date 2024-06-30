@@ -1,11 +1,11 @@
-# nsu.mmf.syspro.jdu.jduImpl
+# nsu.mmf.syspro.sizer.sizerImpl
 
 
 Написать утилитную программу, которая показывает, сколько места занимают файлы в данной директории
 
 ### Запуск программы
 ```
-nsu.mmf.syspro.jdu.jduImpl [options] [dir]
+nsu.mmf.syspro.sizer.sizerImpl [options] [dir]
 ```
 
 `dir` - рут директория сканирования (текущая директория по умолчанию)
@@ -23,7 +23,7 @@ nsu.mmf.syspro.jdu.jduImpl [options] [dir]
 ### Пример (глубина рекурсии 3)
 
 ```
-> nsu.mmf.syspro.jdu.jduImpl jdk-19.0.2.jdk
+> nsu.mmf.syspro.sizer.sizerImpl jdk-19.0.2.jdk
 
 <
 /Contents [315.8 MiB]

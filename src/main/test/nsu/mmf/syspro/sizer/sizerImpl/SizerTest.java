@@ -1,16 +1,16 @@
-package nsu.mmf.syspro.jdu.jduImpl;
+package nsu.mmf.syspro.sizer.sizerImpl;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class JDUTest {
+public class SizerTest {
 
     void test(String flags, String testDirectory, String expected) {
-        String input = "jdu " + flags + " src/main/testResources/" + testDirectory;
-        JDU jdu = new JDU(new StringBuilder());
-        jdu.run(input);
-        assertEquals(expected, String.valueOf(jdu.outputStream));
+        String input = "sizer " + flags + " src/main/testResources/" + testDirectory;
+        Sizer sizer = new Sizer(new StringBuilder());
+        sizer.run(input);
+        assertEquals(expected, String.valueOf(sizer.outputStream));
     }
 
     void test(String testDirectory, String expected) {

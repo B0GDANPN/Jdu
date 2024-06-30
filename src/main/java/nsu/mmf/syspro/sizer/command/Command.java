@@ -1,4 +1,4 @@
-package nsu.mmf.syspro.jdu.command;
+package nsu.mmf.syspro.sizer.command;
 
 
 

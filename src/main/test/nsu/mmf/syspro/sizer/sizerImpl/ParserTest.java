@@ -1,7 +1,7 @@
-package nsu.mmf.syspro.jdu.jduImpl;
+package nsu.mmf.syspro.sizer.sizerImpl;
 
-import nsu.mmf.syspro.jdu.command.Command;
-import nsu.mmf.syspro.jdu.exception.ParserException;
+import nsu.mmf.syspro.sizer.command.Command;
+import nsu.mmf.syspro.sizer.exception.ParserException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
@@ -28,22 +28,22 @@ public class ParserTest {
 
     @Test
     void testLimitFlag(){
-        test("jdu --limit 2 path/to/smth", false, 3, 2, Path.of("path/to/smth"));
+        test("sizer --limit 2 path/to/smth", false, 3, 2, Path.of("path/to/smth"));
     }
 
     @Test
     void testDepthFlag(){
-        test("jdu --depth 1 path/to/another", false, 1, 10, Path.of("path/to/another"));
+        test("sizer --depth 1 path/to/another", false, 1, 10, Path.of("path/to/another"));
     }
 
     @Test
     void testSymbolicLinkFlag(){
-        test("jdu -L path/to/smth", true, 3, 10, Path.of("path/to/smth"));
+        test("sizer -L path/to/smth", true, 3, 10, Path.of("path/to/smth"));
     }
 
     @Test
     void testCombined(){
-        test("jdu --limit 2 --depth 1 -L path/to/smth", true, 1, 2, Path.of("path/to/smth"));
+        test("sizer --limit 2 --depth 1 -L path/to/smth", true, 1, 2, Path.of("path/to/smth"));
     }
 
     @Test

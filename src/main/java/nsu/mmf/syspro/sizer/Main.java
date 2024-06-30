@@ -1,6 +1,6 @@
-package nsu.mmf.syspro.jdu;
+package nsu.mmf.syspro.sizer;
 
-import nsu.mmf.syspro.jdu.jduImpl.JDU;
+import nsu.mmf.syspro.sizer.sizerImpl.Sizer;
 
 import java.util.Scanner;
 
@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        JDU jdu = new JDU(System.out);
+        Sizer sizer = new Sizer(System.out);
         while (true) {
             String line = scanner.nextLine();
-            jdu.run(line);
+            sizer.run(line);
         }
     }
 }
